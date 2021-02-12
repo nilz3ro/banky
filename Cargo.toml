@@ -10,3 +10,4 @@ edition = "2018"
 csv = "1.1.5"
 serde = { version = "1", features = ["derive"] }
 anyhow = "1.0.38"
+rust_decimal = { version= "1.10.2", features = ["serde-str"] }
