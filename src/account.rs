@@ -202,7 +202,6 @@ impl Account {
                     }
                     TransactionType::Withdrawal(t) => {
                         self.held -= t.amount().unwrap();
-                        self.total += t.amount().unwrap();
                     }
                     _ => return Err(anyhow!("impossible transaction type found: {:?}", debit)),
                 }
